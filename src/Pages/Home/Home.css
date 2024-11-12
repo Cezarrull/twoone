@@ -1,40 +1,76 @@
 .homeBody {
-    height: 200vh;
+    height: 100%;
     background: var(--purple);
-    padding: 20vh 20px 0 20px;
+    padding: 20vh 20px 20vh 20px;
 }
 
 .container {
-    padding: 0 18px 18px 18px;
+    padding: 18px;
     background-image: linear-gradient(135deg, #fff6, #ffffff1a 45%, #ffffff12 72%);
     border-radius: 20px;
+    margin-bottom: 40vh;
 }
 
-.text {
-    padding: 8vh 50px 35px 50px;
+.containerTwo {
+    padding: 18px;
+    background-image: linear-gradient(220deg, #fff6, #ffffff1a 45%, #ffffff12 72%);
+    border-radius: 20px;
+    margin-bottom: 40vh;
 }
 
-.text h2 {
+.text,
+.textTwo {
+    padding: 5vh 40px 35px 40px;
+}
+
+.text h2,
+.textTwo h2 {
     font-family: "Abcgintonord", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--white);
     line-height: 1.2rem;
+    margin-bottom: 8px;
 }
 
-.text p {
+.text p,
+.textTwo p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 400;
     color: var(--white);
     line-height: 1.5rem;
 }
 
-.image {
+.image,
+.imageTwo {
+    width: 100%;
+}
+
+.image img,
+.imageTwo img {
     width: 100%;
     height: 40vh;
     border-radius: 24px;
-    background: url(src/assets/IMG_9642.JPEG);
-    background-size: cover;
-    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    .container,
+    .containerTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text,
+    .textTwo {
+        max-width: 50vh;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .container,
+    .containerTwo {
+        max-width: 1050px;
+    }
 }
