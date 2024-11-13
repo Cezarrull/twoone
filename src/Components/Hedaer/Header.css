@@ -22,6 +22,15 @@ a:hover {
     padding: 10px 70px 0 70px;
     height: 9vh;
     background: transparent;
+    
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    z-index: 100;
+}
+
+.sticky {
+    background: var(--bgHeader);
 }
 
 .nav__brand {

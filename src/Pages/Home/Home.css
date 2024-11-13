@@ -4,12 +4,18 @@
     padding: 20vh 20px 20vh 20px;
 }
 
+.buttonHref:hover {
+    list-style: none;
+    text-decoration: none;
+}
+
 .container {
     padding: 18px;
     background-image: linear-gradient(135deg, #fff6, #ffffff1a 45%, #ffffff12 72%);
     border-radius: 20px;
     margin-bottom: 40vh;
     box-shadow: 0 0 13px var(--shadow);
+    transition: 0.2s;
 }
 
 .containerTwo {
@@ -18,6 +24,13 @@
     border-radius: 20px;
     margin-bottom: 40vh;
     box-shadow: 0 0 13px var(--shadow);
+    transition: 0.2s;
+}
+
+.container:hover,
+.containerTwo:hover {
+    transform: scale(1.001);
+    box-shadow: 0 0 20px var(--shadow);
 }
 
 .text,
@@ -28,7 +41,7 @@
 .text h2,
 .textTwo h2 {
     font-family: "Abcgintonord", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--white);
     line-height: 1.2rem;
@@ -46,14 +59,19 @@
 
 .image,
 .imageTwo {
-    width: 100%;
+    width: 60vw;
+    height: 40vh;
+    max-width: max-content;
+    max-height: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image img,
 .imageTwo img {
-    width: 100%;
-    height: 40vh;
     border-radius: 24px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,8 +101,8 @@
 }
 
 @media screen and (max-height: 430px) {
-    .image img,
-    .imageTwo img {
+    .image,
+    .imageTwo {
         height: 90vh;
     }
 }
