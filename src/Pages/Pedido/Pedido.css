@@ -1,0 +1,32 @@
+.pedidoBody {
+    height: 100%;
+    background: var(--purple);
+    padding: 20vh 20px 20vh 20px;
+}
+
+.pedidoBody video {
+    max-width: 100%;
+    border-radius: 24px;
+}
+
+.pedidoBody .container {
+    padding: 18px;
+    background-image: linear-gradient(135deg, #fff6, #ffffff1a 45%, #ffffff12 72%);
+    border-radius: 20px;
+    margin-bottom: 40vh;
+    box-shadow: 0 0 13px var(--shadow);
+}
+
+.pedidoBody .container:hover {
+    box-shadow: 0 0 25px var(--shadow);
+}
+
+.pedidoBody .image {
+    width: 60vw;
+    height: 60vh;
+    max-width: max-content;
+    max-height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,10 +1,10 @@
-import { Home } from "./Pages/Home/Home";
+import { Router } from './Routes'
 import './global.css'
 
 export function App() {
   return (
     <>
-      <Home />
+      <Router />
     </>
   )
 }

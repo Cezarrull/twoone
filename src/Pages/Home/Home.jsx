@@ -6,7 +6,7 @@ export function Home() {
         <>
         <Header />
             <div className="homeBody">
-                <a href="#" className="buttonHref">
+                <a href="/Pedido" className="buttonHref">
                     <div className="container">
                         <div className="text">
                             <h2>ONDE TUDO COMEÇOU</h2>
