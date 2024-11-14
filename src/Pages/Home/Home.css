@@ -27,7 +27,6 @@
 
 .container:hover,
 .containerTwo:hover {
-    transform: scale(1.001);
     box-shadow: 0 0 25px var(--shadow);
 }
 

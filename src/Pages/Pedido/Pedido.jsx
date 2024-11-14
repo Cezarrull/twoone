@@ -6,17 +6,18 @@ export function Pedido() {
         <>
         <Header />
             <div className="pedidoBody">
-                <div className="container">
-                    <div className="text">
+                <div className="containerOrder">
+                    <div className="textOrder">
                         <h2>DIA DO PEDIDO 01/09/2024</h2>
                         <p>
                             E foi no dia 01 de novembro de 2024, que convidei a mulher dos meus sonhos, para ser o amor da minha vida!
                         </p>
                         <p>
-                            Juntos a <span className='buttonDate' id='days'>{message}</span> dias!
+                            Estamos juntos a <span className='buttonDate' id='days' data-val={message}>00</span> dias!
+                            Que venha muitos outros.
                         </p>
                     </div>
-                    <div className="image">
+                    <div className="imageOrder">
                         <video src="src/assets/PagePedido/PEDIDO_VIDEO_OFiCIAL.MP4" loop autoPlay></video>
                     </div>
                 </div>
@@ -33,8 +34,23 @@ export function Pedido() {
     
     const timeInOneDay = 1000 * 60 * 60 * 24
     
-    const diffInDays = diffInTime / timeInOneDay + 1
+    const diffInDays = diffInTime / timeInOneDay
 
     const diffInDaysValue = diffInDays.toFixed(0) 
 
-    const message = String(diffInDaysValue);
+    const message = Number(diffInDaysValue);
+
+//function AnimationNumbers 
+/*
+const valueDisplay = document.querySelector(".buttonDate");
+let startValue = 0;
+
+
+let counterUpDate = setInterval(function() {
+    startValue ++;
+
+
+    if (startValue >= 75) {
+        clearInterval(counter);
+    }
+}, 1)*/
